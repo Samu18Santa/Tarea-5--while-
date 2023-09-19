@@ -31,7 +31,7 @@ int main()
         primerValor = segundoValor;
         segundoValor = auxiliar;
         i++;
-    }//fin del for
+    }//fin del while  
 
     return 0; 
  }

@@ -65,7 +65,7 @@ int main()
         //se reinician los valores de j y k para la siguiente linea
         j = 1;
         k = 1;
-    }//fin del for
+    }//fin del while
 
     return 0;
 }

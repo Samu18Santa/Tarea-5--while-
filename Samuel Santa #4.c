@@ -3,7 +3,7 @@
 - Versión de su código: 1.0
 - Autor. Ing(c) Samuel Santa Martínez
 - Nombre del lenguaje utilizado: C
-- Versión del lenguaje utilizado: C18
+- Versión del lenguaje utilizado: C18 
 - Presentado a: Doctor Ricardo Moreno Laverde
 - Universidad Tecnológica de Pereira
 - Programa de Ingeniería de Sistemas y Computación

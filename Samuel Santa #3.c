@@ -11,7 +11,7 @@
 - El siguiente programa presenta la serie de Lucas sin sobrepasar el número de terminos que ingrese el usuario
 - Salvedad: El programa admite números naturales, para valores fuera de este rango no garantizamos su resultado
 */
-#include <stdio.h>
+#include <stdio.h> 
 
 #include <stdio.h>
 
