@@ -1,5 +1,5 @@
-/*- Fecha de publicación: 2023-09-03
-- Hora: 4:00 p.m
+/*- Fecha de publicación: 2023-09-24
+- Hora: 2:00 p.m
 - Versión de su código: 1.0
 - Autor. Ing(c) Samuel Santa Martínez
 - Nombre del lenguaje utilizado: C
@@ -20,7 +20,7 @@ int main()
     printf( "El siguiente programa presenta la serie de Perrin: P(n) = P(n-2) + P(n-3),\ndonde P(0) = 3, P(1) = 0 y P(2) = 2." );
     printf( "\nIngrese el número de términos que desea: " );
     scanf( "%i", &cantidadDeTerminos );//se le asigna a la variable cantidadDeTerminos el valor ingresado por el usuario
-
+  
     printf( "Los primeros %i terminos de la serie de Perrin son: ", cantidadDeTerminos );
 
     //se declara la variable i para el ciclo while, se inicializa en 0, se evalua si i es menor que cantidadDeTerminos y se incrementa en 1

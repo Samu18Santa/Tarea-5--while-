@@ -1,5 +1,5 @@
-/*- Fecha de publicación: 2023-09-03
-- Hora: 4:00 p.m
+/*- Fecha de publicación: 2023-09-24
+- Hora: 2:00 p.m
 - Versión de su código: 1.0
 - Autor. Ing(c) Samuel Santa Martínez
 - Nombre del lenguaje utilizado: C
@@ -33,13 +33,14 @@ float Factorial( float numero )
     }//fin del if
 }//fin de la función Factorial
 
-/*se crea la función Sumatoria con cuatro parámetros de tipo entero, k, n, resultado y de tipo flotante limite que se encarga de hacer
-la sumatoria necesaria para hallar cada termino de la serie */
-float Sumatoria( int k, int n, int limite, float resultado )
+//se crea la función Sumatoria con cuatro parámetros de tipo entero, k, termino,limite que se encarga de hacer la sumatoria necesaria para hallar cada termino de la serie
+float Sumatoria( int k, int termino, int limite )
 {
-    while( k <= limite ){
-        resultado += ( pow( k, n ) / Factorial( k ) );
-        k++;
+    float resultado = 0;//se declara la variable resultado de tipo float con un valor de 0
+
+    for( ; k <= limite; k++ )
+    {
+        resultado += ( pow( k, termino ) / Factorial( k ) );
     }//fin del while
 
     //se multiplica el resultado de la sumatoria por 1/e para obtener el termino de la serie ( e = numero euler )
@@ -57,13 +58,13 @@ int main()
     
     printf( "Los primeros %i términos de la serie de Bell son: ", cantidadDeTerminos );
     
-    //se declara la variable i para el ciclo while, se inicializa en 0, se evalua si i es menor que cantidadDeTerminos y se incrementa en 1
-    int i = 0;
-    while ( i < cantidadDeTerminos)
+    //se declara la variable contador para el ciclo while, se inicializa en 0, se evalua si contador es menor que cantidadDeTerminos y se incrementa en 1
+    int contador = 0;
+    while ( contador < cantidadDeTerminos)
     {
-        printf( "%g, ", Sumatoria( 0, i, 100, 0 ) );//se llama a la funcion sumatoria para hallar el termino de la serie
+        printf( "%g, ", Sumatoria( 0, contador, 100 ) );//se llama a la funcion sumatoria para hallar el termino de la serie
                 //se usa el formato %g para que el resultado sea redondeado y no se imprima con valores decimales
-        i++;
+        contador++;
     }//fin del while
 
     return 0;
