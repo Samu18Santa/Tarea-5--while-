@@ -38,9 +38,10 @@ float Sumatoria( int k, int termino, int limite )
 {
     float resultado = 0;//se declara la variable resultado de tipo float con un valor de 0
 
-    for( ; k <= limite; k++ )
+    while( k <= limite )
     {
         resultado += ( pow( k, termino ) / Factorial( k ) );
+        k++;
     }//fin del while
 
     //se multiplica el resultado de la sumatoria por 1/e para obtener el termino de la serie ( e = numero euler )
