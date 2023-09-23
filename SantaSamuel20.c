@@ -61,7 +61,7 @@ int main()
     int fila = 1;
     while( fila <= 25 )
     {
-        ImprimirEspacios( 80- fila );
+        ImprimirEspacios( 80 - fila );
         ImprimirLetras( fila );
         printf( "\n" );
         fila++;

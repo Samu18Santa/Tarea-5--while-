@@ -41,8 +41,7 @@ int main()
         espacioInicial++;
         espacioMedio -= 2;
     }//fin del while
-    //se imprime un salto de linea y se pausa la consola para que esta no se cierre automaticamente al terminar el programa
-    printf( "\n" );
+    //se pausa la consola para que esta no se cierre automaticamente al terminar el programa
     system( "pause" );
 
     return 0;

@@ -36,13 +36,14 @@ int main()
             columna1++;
             columna2++;
             columna3 = 1;
+            fila++;//se aumenta el valor de fila en 1
         }//de lo contrario
         else{
             printf( "%i %i %i\n", columna1, columna2, columna3 );
             columna1++;
             columna3++;
+            fila++;//se aumenta el valor de fila en 1
         }//fin del if
-        fila++;//se aumenta el valor de fila en 1
     }//fin del while
 
     return 0;

@@ -13,8 +13,6 @@
 */
 #include <stdio.h> 
 
-#include <stdio.h>
-
 int main()
 {    
     int primerValor = 2, segundoValor = 1, auxiliar = 0, cantidadDeTerminos = 0; //se declaran las variables necesarias para el programa, primerValor y segundoValor para los primeros valores de la serie, auxilar para ayudarnos en la formula usada para hallar los valores de la serie y cantidadDeTerminos para almacenar el numero de terminos ingresado por el usuario.
